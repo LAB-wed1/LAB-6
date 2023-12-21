@@ -52,6 +52,60 @@
 	<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- ใส่ CODE PHP ที่นี่ -->	
+<?php
+
+function birthdayCountdown($month) {
+    $daysInMonth = 0;
+
+    switch ($month) {
+        case "April":
+        case "June":
+        case "September":
+        case "November":
+            $daysInMonth = 30;
+            $decrementValue = 10;
+            $message = "Wish you all the happiness in the world!";
+            break;
+
+        case "January":
+        case "March":
+        case "May":
+        case "July":
+        case "August":
+        case "October":
+        case "December":
+            $daysInMonth = 31;
+            $decrementValue = 5;
+            $message = "May all your dreams come true!";
+            break;
+
+        case "February":
+            $daysInMonth = (int)readline("Enter the number of days in February (28 or 29): ");
+            $decrementValue = 1;
+            $message = "May your life be colorful!";
+            break;
+
+        default:
+            echo "Invalid!";
+            return;
+    }
+
+    // Countdown loop
+    $daysLeft = $daysInMonth;
+    while ($daysLeft > 0) {
+        echo "Days left: $daysLeft\n";
+        $daysLeft -= $decrementValue;
+    }
+
+    echo $message . "\n";
+}
+
+// ตัวอย่างการเรียกใช้งาน
+$userMonth = readline("Enter your birth month: ");
+birthdayCountdown($userMonth);
+
+?>
+
 
 
 </body>
