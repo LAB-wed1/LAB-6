@@ -14,6 +14,7 @@
     body, html {
     background-size: cover;
     font-family: 'Kanit', sans-serif;
+    background-image: url(5.gif);
     }
     a{
         text-decoration: none;
@@ -30,15 +31,19 @@
     .column {
     flex: 50%;
     }
-
-    .back{
-        background-image: url("https://i.pinimg.com/564x/28/e1/9e/28e19e5546ef27a7dd833722e948e6ae.jpg";
+    h1 {
+        text-align: center;
+        
+    }
+    p{
+        margin-left: 36%;
+        font-size: 24px;
     }
     </style> 
 
 </head>
 <!-- ตั้งรูปพื้นหลังที่นี่ -->
-<body class="back" background="./.....png">
+<body background="./.png">
     <div class="row">
         
         <div class="column" align="right" style="padding-right: 20px;padding-top: 40px;">
@@ -55,20 +60,26 @@
 	<hr/>
 	
 <!-- ใส่ CODE PHP ที่นี่ -->	
- <?php
-    // ตัวอย่างข้อมูลสำหรับแสดงผล
-    $welcomeMessage = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์ใหญ่ใช้ strtoupper <br>";
-    $latestNews = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์เล็กใช้ strtolower";
-    $latestNews2 = "ข่าวล่าสุด: โปรโมชั่น";
-    
-    ?>
 
-    <!-- ส่วน HTML เพื่อแสดงผลข้อมูล -->
-    <div style="padding: 20px;">
-        <h2><?php echo $welcomeMessage; ?></h2>
-        <h2><?php echo $latestNews; ?></h2>
-        <p><?php echo $latestNews2; ?></p>
-    </div>
+<?php
+    $topic1 = "ฟังก์ชันในการแปลงสตริง";
+?>
+<?php 
+    $pr1 = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์ใหญ่ใช้ strtoupper";
+    $pr2 = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์เล็กใช้ strtolower";
+?>
+
+<h1><?php echo $topic1 ?></h1>
+<p><br><?php echo $pr1 ?><br>
+<?php echo $pr2  ?><br>
+< html ><br>
+< body ><br>
+< ?php <br>
+echo strtoupper(''Hello WORLD'')<br>
+echo strtolower(''Hello WORLD'')<br>
+?> <br>
+< /body > <br>
+< /html ></p>
 
 </body>
 </html>

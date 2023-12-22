@@ -11,9 +11,17 @@
     <!-- #### ส่วนของ CSS ตกแต่งเว็บไซต์ ### -->
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
     <style>
+    td {
+        border: 4px solid salmon;
+        font-size: 26px;
+        text-align: center;
+        
+    }
     body, html {
     background-size: cover;
     font-family: 'Kanit', sans-serif;
+    background-image: url(51.gif);
+    width: 100;
     }
     a{
         text-decoration: none;
@@ -30,11 +38,16 @@
     .column {
     flex: 50%;
     }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: black;
+    }
     </style> 
-
 </head>
 <!-- ตั้งรูปพื้นหลังที่นี่ -->
-<body background="./.....png">
+<body background="./.png">
     <div class="row">
         
         <div class="column" align="right" style="padding-right: 20px;padding-top: 40px;">
@@ -49,10 +62,34 @@
 		
     </div>
 	<hr/>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><h1 style="color:salmon;text-align:center"><br></h1><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<!-- ใส่ CODE PHP ที่นี่ -->				  
+<!-- ใส่ CODE PHP ที่นี่ -->			  
+<?php
+    $fullname = "chakkarin karanet";
+    $nickname = "wave";
+    $birthday = "06-06-2004";
+    $today = date("Y-m-d");
+    $diff = date_diff(date_create($birthday), date_create($today));
+    list($firstname,$lastname) = explode(" ",$fullname);
+?>
 
-
+<table  style width="20%" >
+    <tr>
+        <td> First name  </td><td><?php echo $firstname ?></td>
+    </tr>
+    <tr>
+        <td> Last name  </td><td><?php echo $lastname ?></td>
+    </tr>
+    <tr>
+        <td> Nickname  </td><td><?php echo $nickname ?></td>
+    </tr>
+    <tr>
+        <td> Age  </td><td style="color: red"><?php echo $diff->format('%y') ?></td>
+    </tr>
+    <tr>
+        <td> Update  </td><td><?php echo $today ?></td>
+    </tr>
+</table>
 </body>
 </html>
