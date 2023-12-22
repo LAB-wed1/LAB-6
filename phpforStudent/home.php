@@ -42,7 +42,7 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        color: black;
+        
     }
     </style> 
 </head>

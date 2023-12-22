@@ -14,6 +14,7 @@
     body, html {
     background-size: cover;
     font-family: 'Kanit', sans-serif;
+    background-image: url(.gif);
     }
     a{
         text-decoration: none;
@@ -34,7 +35,7 @@
 
 </head>
 <!-- ตั้งรูปพื้นหลังที่นี่ -->
-<body background="./.....png">
+<body background="./.png">
     <div class="row">
         
         <div class="column" align="right" style="padding-right: 20px;padding-top: 40px;">
@@ -52,44 +53,33 @@
 	<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- ใส่ CODE PHP ที่นี่ -->	
-
+<div style="text-align:center;width:100%;font-size:30px;color:green;">
 <?php
-function countdown_birthday($month) {
-    $days_in_month = 0;
-
-    if ($month == 4 || $month == 6 || $month == 9 || $month == 11) {
-        $days_in_month = 30;
-    } elseif ($month == 1 || $month == 3 || $month == 5 || $month == 7 || $month == 8 || $month == 10 || $month == 12) {
-        $days_in_month = 31;
-    } elseif ($month == 2) {
-        $days_in_month = 29;  // Leap year (you may modify this based on the actual year)
-    } else {
-        $days_in_month = 28;
-    }
-
-    echo "My Birthday is August\n\n <br>";
-
-    if ($days_in_month == 30) {
-        for ($i = 31; $i >= 1; $i -= 5) {
-            echo "Countdown: $i\n<br>";
-        }
-        echo "\nHappy Birthday to You !!!\nMay all your dreams come true!";
-    } elseif ($days_in_month == 31) {
-        for ($i = 31; $i >= 1; $i -= 5) {
-            echo "Countdown: $i\n <br>";
-        }
-        echo "\nHappy Birthday to You !!!\nMay all your dreams come true!";
-    } elseif ($days_in_month == 28 || $days_in_month == 29) {
-        echo "Countdown: 1\n <br>";
-        echo "\nHappy Birthday to You !!!\nMay your life be colorful!";
-    } else {
-        echo "Invalid!";
-    }
+$day = 6;
+$month = 6;
+$year = 2004;
+if ($month == 1 || $month == 3 || $month == 5 || $month == 7 || $month == 8 || $month == 10 || $month == 12) {
+    $days_in_month = 31;
+} else if ($month == 4 || $month == 6 || $month == 9 || $month == 11) {
+    $days_in_month = 30;
+} else {
+    $days_in_month = 28;
 }
-
-// Call the function with the specified month (August is represented by 8)
-countdown_birthday(8);
+while ($days_in_month >= 0) {
+    echo "Coutdown : $days_in_month<br>";
+    $days_in_month -= 5;
+}
+echo "<br>Happy Birthday to You!!!<br>";
+if ($month == 1 || $month == 3 || $month == 5 || $month == 7 || $month == 8 || $month == 10 || $month == 12) {
+    echo "Wish you all the happiness in the world!";
+} else if ($month == 4 || $month == 6 || $month == 9 || $month == 11) {
+    echo "May all your dreams come true!";
+} else {
+    echo "May your life be colorful!";
+}
 ?>
+</div>
+
 
 </body>
 </html>

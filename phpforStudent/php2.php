@@ -14,6 +14,7 @@
     body, html {
     background-size: cover;
     font-family: 'Kanit', sans-serif;
+    background-image: url(.gif);
     }
     a{
         text-decoration: none;
@@ -30,11 +31,19 @@
     .column {
     flex: 50%;
     }
+    h1 {
+        text-align: center;
+    }
+    p{
+        margin-left: 15%;
+        font-size: 24px;
+    }
+    </style> 
     </style> 
 
 </head>
 <!-- ตั้งรูปพื้นหลังที่นี่ -->
-<body background="./.....png">
+<body background="./.png">
     <div class="row">
         
         <div class="column" align="right" style="padding-right: 20px;padding-top: 40px;">
@@ -52,6 +61,23 @@
 	
 <!-- ใส่ CODE PHP ที่นี่ -->	
 
+<?php
+    $topic1 = "คำสั่งตรวจสอบเงื่อนไข IF-ELSE";
+?>
+<?php
+    $pr1 = "- คำสั่ง if ใช้สำหรับกำหนดเพื่อให้โปรแกรมทำงานเมื่อเงื่อนไขเป็นจริง (True) ส่วนคำสั่ง else ใช้เพื่อกำหนดให้ไปรแกรมทำงานเมื่อเงื่อนไขเป็นเท็จ (False)";
+?>
+
+<h1><?php echo $topic1 ?></h1>
+<p><br><?php echo $pr1 ?><br>
+< html > < body ><br>
+< ?php <br>
+$d = data("D");<br>
+if($d == "Fri") { <br>
+echo "Have a nice weekend" <br>
+} <br>
+?> <br>
+< /body > < /html ></p>
 
 </body>
 </html>
