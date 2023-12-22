@@ -30,11 +30,15 @@
     .column {
     flex: 50%;
     }
+
+    .back{
+        background-image: url("https://i.pinimg.com/564x/28/e1/9e/28e19e5546ef27a7dd833722e948e6ae.jpg";
+    }
     </style> 
 
 </head>
 <!-- ตั้งรูปพื้นหลังที่นี่ -->
-<body background="./.....png">
+<body class="back" background="./.....png">
     <div class="row">
         
         <div class="column" align="right" style="padding-right: 20px;padding-top: 40px;">
