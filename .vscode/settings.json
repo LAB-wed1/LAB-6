@@ -1,4 +1,8 @@
 {
     "vsicons.presets.angular": true,
-    "vsicons.presets.nestjs": true
+    "vsicons.presets.nestjs": true,
+    "cSpell.words": [
+        "จะส่งคืนจำนวนวันในหนึ่งเดือนสำหรับปีและปฏิทินที่ระบุ",
+        "ประกาศตัวแปร"
+    ]
 }
