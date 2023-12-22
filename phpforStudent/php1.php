@@ -51,7 +51,17 @@
 	<hr/>
 	
 <!-- ใส่ CODE PHP ที่นี่ -->	
+ <?php
+    // ตัวอย่างข้อมูลสำหรับแสดงผล
+    $welcomeMessage = "ยินดีต้อนรับสู่เว็บไซต์ของฉัน!";
+    $latestNews = "ข่าวล่าสุด: โปรโมชั่นพิเศษสำหรับสมาชิกใหม่!";
+    ?>
 
+    <!-- ส่วน HTML เพื่อแสดงผลข้อมูล -->
+    <div style="padding: 20px;">
+        <h2><?php echo $welcomeMessage; ?></h2>
+        <p><?php echo $latestNews; ?></p>
+    </div>
 
 </body>
 </html>
