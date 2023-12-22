@@ -53,14 +53,17 @@
 <!-- ใส่ CODE PHP ที่นี่ -->	
  <?php
     // ตัวอย่างข้อมูลสำหรับแสดงผล
-    $welcomeMessage = "ยินดีต้อนรับสู่เว็บไซต์ของฉัน!";
-    $latestNews = "ข่าวล่าสุด: โปรโมชั่นพิเศษสำหรับสมาชิกใหม่!";
+    $welcomeMessage = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์ใหญ่ใช้ strtoupper <br>";
+    $latestNews = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์เล็กใช้ strtolower";
+    $latestNews2 = "ข่าวล่าสุด: โปรโมชั่น";
+    
     ?>
 
     <!-- ส่วน HTML เพื่อแสดงผลข้อมูล -->
     <div style="padding: 20px;">
         <h2><?php echo $welcomeMessage; ?></h2>
-        <p><?php echo $latestNews; ?></p>
+        <h2><?php echo $latestNews; ?></h2>
+        <p><?php echo $latestNews2; ?></p>
     </div>
 
 </body>
