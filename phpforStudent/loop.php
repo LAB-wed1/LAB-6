@@ -53,6 +53,43 @@
 
 <!-- ใส่ CODE PHP ที่นี่ -->	
 
+<?php
+function countdown_birthday($month) {
+    $days_in_month = 0;
+
+    if ($month == 4 || $month == 6 || $month == 9 || $month == 11) {
+        $days_in_month = 30;
+    } elseif ($month == 1 || $month == 3 || $month == 5 || $month == 7 || $month == 8 || $month == 10 || $month == 12) {
+        $days_in_month = 31;
+    } elseif ($month == 2) {
+        $days_in_month = 29;  // Leap year (you may modify this based on the actual year)
+    } else {
+        $days_in_month = 28;
+    }
+
+    echo "My Birthday is August\n\n <br>";
+
+    if ($days_in_month == 30) {
+        for ($i = 31; $i >= 1; $i -= 5) {
+            echo "Countdown: $i\n<br>";
+        }
+        echo "\nHappy Birthday to You !!!\nMay all your dreams come true!";
+    } elseif ($days_in_month == 31) {
+        for ($i = 31; $i >= 1; $i -= 5) {
+            echo "Countdown: $i\n <br>";
+        }
+        echo "\nHappy Birthday to You !!!\nMay all your dreams come true!";
+    } elseif ($days_in_month == 28 || $days_in_month == 29) {
+        echo "Countdown: 1\n <br>";
+        echo "\nHappy Birthday to You !!!\nMay your life be colorful!";
+    } else {
+        echo "Invalid!";
+    }
+}
+
+// Call the function with the specified month (August is represented by 8)
+countdown_birthday(8);
+?>
 
 </body>
 </html>

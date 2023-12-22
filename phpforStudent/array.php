@@ -54,13 +54,11 @@ $name = array(
     array("Albus", "Middle Child", 13),
     array("Lily", "Youngest Child", 11),
 );
-
 // Sorting function
 function cmp($a, $b)
 {
     return strcmp($a[0], $b[0]);
 }
-
 // Sorting the array by name
 usort($name, "cmp");
 
