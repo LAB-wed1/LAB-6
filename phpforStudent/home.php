@@ -21,7 +21,8 @@
     background-size: cover;
     font-family: 'Kanit', sans-serif;
     background-image: url(51.gif);
-    width: 100;
+    background-size: 100%;
+    
     }
     a{
         text-decoration: none;

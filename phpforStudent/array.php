@@ -14,6 +14,7 @@
     body, html {
     background-size: cover;
     font-family: 'Kanit', sans-serif;
+    background-image: url(52.gif);
     }
     a{
         text-decoration: none;

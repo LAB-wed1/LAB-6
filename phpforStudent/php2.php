@@ -14,7 +14,8 @@
     body, html {
     background-size: cover;
     font-family: 'Kanit', sans-serif;
-    background-image: url(.gif);
+    background-image: url(52.gif);
+    background-size: 100%;
     }
     a{
         text-decoration: none;
@@ -43,7 +44,7 @@
 
 </head>
 <!-- ตั้งรูปพื้นหลังที่นี่ -->
-<body background="./.png">
+<body background="./32.png">
     <div class="row">
         
         <div class="column" align="right" style="padding-right: 20px;padding-top: 40px;">
