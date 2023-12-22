@@ -55,8 +55,8 @@
 <!-- ใส่ CODE PHP ที่นี่ -->	
 <div style="text-align:center;width:100%;font-size:30px;color:green;">
 <?php
-$day = 6;
-$month = 6;
+$day = 24;
+$month = 8;
 $year = 2004;
 if ($month == 1 || $month == 3 || $month == 5 || $month == 7 || $month == 8 || $month == 10 || $month == 12) {
     $days_in_month = 31;

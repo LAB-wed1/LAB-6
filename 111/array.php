@@ -72,8 +72,8 @@
 <?php 
 
 $name = array (
-    array("Albus","Middle Child",13),
     array("James","Eldest Child",15),
+    array("Albus","Middle Child",13),
     array("Lily","Youngest Child",11),
    );
 ?>

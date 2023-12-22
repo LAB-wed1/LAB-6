@@ -65,19 +65,29 @@
 <?php
     $pr1 = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์ใหญ่ใช้ strtoupper";
     $pr2 = "- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์เล็กใช้ strtolower";
+    $argc3= '<html>';
+    $argc4='< body >';
+    $argc5=  '< ?php ';
+    $argc6='echo strtoupper("Hello WORLD")';
+    $argc7='echo strtolower("Hello WORLD")';
+    $argc8= '?>';
+    $argc9= '</body>';
+    $argc10=  '</html>';
+
 ?>
 
 <h1><?php echo $topic1 ?></h1>
 <p><br><?php echo $pr1 ?><br>
-<?php echo $pr2 ?><br>
-< html ><br>
-< body ><br>
-< ?php <br>
-echo strtoupper(''Hello WORLD'')<br>
-echo strtolower(''Hello WORLD'')<br>
-?> <br>
-< /body > <br>
-< /html ></p>
+<?php echo htmlentities ("$pr1") ?> <br>
+<?php echo htmlentities ("$pr2") ?> <br>
+<?php echo htmlentities ("$argc3") ?> <br>
+<?php echo htmlentities ("$argc4") ?> <br>
+<?php echo htmlentities ("$argc5") ?> <br>
+<?php echo htmlentities ("$argc6") ?> <br>
+<?php echo htmlentities ("$argc7") ?> <br>
+<?php echo htmlentities ("$argc8") ?> <br>
+<?php echo htmlentities ("$argc9") ?> <br>
+<?php echo htmlentities ("$argc10") ?> <br>
 
 </body>
 </html>

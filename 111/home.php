@@ -61,7 +61,7 @@
 	<hr/>
     <br/><br/><h1 style="color:salmon;text-align:center">Chakkarin Karanet WebSite PHP <br></h1><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<!-- ใส่ CODE PHP ที่นี่ -->			  
+<!-- ใส่ CODE PHP ที่นี่ strlen* -->			  
 <?php
     $fullname = "chakkarin karanet";
     $nickname = "wave";

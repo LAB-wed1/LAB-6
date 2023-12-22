@@ -80,7 +80,8 @@ $name = array (
 ?>
 <table>
 <tr>
-    <td><p><br><?php foreach ($name as $data){
+    <td><p><br><?php  sort ($name)
+        foreach ($name as $data){
         echo "Name : ".$data[0]. "<br>";
         echo "Status : ".$data[1]. "<br>";
         echo "Age : ".$data[2]. "<br><br>"; }?></p>

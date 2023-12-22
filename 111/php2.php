@@ -64,19 +64,31 @@
     $topic1 = "คำสั่งตรวจสอบเงื่อนไข IF-ELSE";
 ?>
 <?php
-    $pr1 = "- คำสั่ง if ใช้สำหรับกำหนดเพื่อให้โปรแกรมทำงานเมื่อเงื่อนไขเป็นจริง (True) ส่วนคำสั่ง else ใช้เพื่อกำหนดให้ไปรแกรมทำงานเมื่อเงื่อนไขเป็นเท็จ (False)";
+    $pr1 = '- คำสั่ง if ใช้สำหรับกำหนดเพื่อให้โปรแกรมทำงานเมื่อเงื่อนไขเป็นจริง (True) ส่วนคำสั่ง else ใช้เพื่อกำหนดให้ไปรแกรมทำงานเมื่อเงื่อนไขเป็นเท็จ (False)';
+    $pr2 = '- ฟังก์ชันแปลงสตริงให้เป็นตัวพิมพ์เล็กใช้ strtolower';
+    $argc3= '<html>';
+    $argc4='< body >';
+    $argc5=  '< ?php ';
+    $argc6='$d = data("D")';
+    $argc7='if($d == "Fri"){';
+    $argc8= 'echo "Heve a nice weekend"';
+    $argc9= '}';
+    $argc10=  '</html>';
+    $argc11=  '</body>';
 ?>
 
 <h1><?php echo $topic1 ?></h1>
-<p><br><?php echo $pr1 ?><br>
-< html > < body ><br>
-< ?php <br>
-$d = data("D");<br>
-if($d == "Fri") { <br>
-echo "Have a nice weekend" <br>
-} <br>
-?> <br>
-< /body > < /html ></p>
+<?php echo htmlentities ("$pr1") ?> <br>
+<?php echo htmlentities ("$pr2") ?> <br>
+<?php echo htmlentities ("$argc3") ?> <br>
+<?php echo htmlentities ("$argc4") ?> <br>
+<?php echo htmlentities ("$argc5") ?> <br>
+<?php echo htmlentities ("$argc6") ?> <br>
+<?php echo htmlentities ("$argc7") ?> <br>
+<?php echo htmlentities ("$argc8") ?> <br>
+<?php echo htmlentities ("$argc9") ?> <br>
+<?php echo htmlentities ("$argc10") ?> <br>
+<?php echo htmlentities ("$argc11") ?> <br>
 
 </body>
 </html>
